@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emとremの違い</title>
+    <link rel="stylesheet" href="test.css">
+    <script src="test.js" defer></script>
+   <style>
+        html {
+            font-size: 16px; /* ルート要素の文字の大きさ */
+        }
+
+        .parent {
+            font-size: 20px; /* 親の要素の文字の大きさ */
+        }
+
+        .child-em {
+            font-size: 2em; /* 親の文字の大きさの2倍 */
+        }
+
+        .child-rem {
+            font-size: 2rem; /* ルート要素の文字の大きさの2倍 */
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="parent">
+        これは親のテキスト（20px）
+        <div class="child-em">これは子どものテキスト (2em = 40px)</div>
+        <div class="child-rem">これは子どものテキスト (2rem = 32px)</div>
+    </div>
+
+
+    <table>
+ 
+        <tr>
+         <td><span>2024年7月</span></td> <td>出来事</td>
+        </tr>
+        <tr>
+         <td><p><span>2024年</span></td> <td>出来事</p></td>
+        </tr>
+        
+       </table>
+
+<h1 id="move">ふわふわうごくよ～</h1>
+
+    </body>
+</html>
