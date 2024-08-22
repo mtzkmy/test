@@ -9,10 +9,11 @@ select.addEventListener("change", setWeather);
 // setWeatherの内容を設定。selectの中にあるvalueに設定する。
 function setWeather(){
     const choice = select.value;
-// もし晴れが選ばれたらの場合。文字列は""で囲う。
+// もし晴れが選ばれたらの場合。textContentでテキスト内容の設定をする。文字列は""で囲う。
     if(choice === "sunny"){
         Text.textContent = 
         "よく晴れるでしょう。洗濯物も完璧に乾きそう！ついでにお布団の日干しもいかがですか？";
+// あとは条件と表示されるテキスト内容を変えるのを繰り返すだけ。
     }else if(choice === "rain"){
         Text.textContent =
         "今日は雨が降りそうです。傘やレインコートなどの備えが必要です。";
@@ -22,11 +23,9 @@ function setWeather(){
     }else if(choice === "snow"){
         Text.textContent = 
         "なんと雪が降ります！予想される降雪量や、夜間にも降り続くか等、今後の予報を確認しましょう。路面凍結にも注意が必要です！外出時はゆっくり気を付けて行きましょう。";
+// 天気以外が選ばれた場合は何も表示しないように、空文字列('')設定。
     }else{
         Text.textContent= "";
     }
     
 }
-
-
-

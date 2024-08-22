@@ -1,0 +1,28 @@
+#right h2{
+    color: #fff;
+    width: 500px;
+    height: 200px;
+    background: linear-gradient(90deg, #ff6600, #ffaa55, #ffd5aa);
+    display: flex;
+    text-align: center;
+}
+
+#circle {
+    background: radial-gradient(#fff 20%, #ff66cc 70%);
+    width: 500px;
+    height: 200px;
+}
+
+#extend {
+    color: #fff;
+    background: linear-gradient(90deg, #55aaff, #55aaff 50%,#fff 50%, #fff);
+    background-size: 200% 100%;
+    margin-top: 20px;
+}
+
+#separate {
+    background: linear-gradient(90deg, #696969 10%, #fff 10%, #fff 20%, #000 20%, #000 30%, #696969 30%, #696969 40%, #fff 40%, #fff 50%, #000 50%, #000 60%, #696969 60%, #696969 70%,#fff 70%, #fff 80%, #000 80%, #000 90%, #696969 90%, #696969 100%);
+    width: 200px;
+    height: 200px;
+    color: lightgray;
+}
